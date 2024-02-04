@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-screen overflow-x-hidden">
+    <main className="scroll-smooth max-w-screen-xl min-h-screen w-screen overflow-x-hidden">
       
       <LandingPage/>
       <Carousel/>
