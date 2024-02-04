@@ -54,7 +54,7 @@ function Advantage (){
 
                             </div>
                             <h2 className='text-gray-900 text-xs font-semibold leading-8 tracking-normal text-left'>Scheduling made easy</h2>
-                            <p className='text-gray-600 text-lg font-normal leading-7 tracking-normal text-left'>Streamline your agenda with ClearLink's intuitive scheduling. Set up meetings, send invitations, and receive reminders in one place.</p>
+                            <p className='text-gray-600 text-lg font-normal leading-7 tracking-normal text-left'>Streamline your agenda with ClearLink&apos;s intuitive scheduling. Set up meetings, send invitations, and receive reminders in one place.</p>
                         </div>
                         <div className=''>
                             <div className='w-14 mb-4 h-14 rounded-full bg-gray-50 grid place-items-center border border-gray-200'>
