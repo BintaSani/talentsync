@@ -17,7 +17,7 @@ function Footer() {
                 <Image src='/assets/logo.svg' width={152.38} height={29} alt='logo' className='mb-5' />
                 <p className='text-gray-600 font-normal text-justify text-base leading-7 tracking-normal'>ClearLink is your gateway to effortless, high-quality video conferencing. Join us in shaping the future of communication!</p>
             </div>
-            <div className='w-full lg:w-[65%] flex flex-col lg:flex-row justify-between'>
+            <div className='w-full lg:w-[65%] flex flex-col space-y-10 lg:space-y-0 lg:flex-row justify-between'>
                 <div className=''>
                     <ul>
                         <li className='mb-2 text-gray-500 font-semibold text-md text-base leading-6'>Product</li>
@@ -171,7 +171,7 @@ function Footer() {
                 
             </div>
         </div>
-        <div className='w-[85%] mx-autolg:w-full bg-gray-50 grid place-items-center'>
+        <div className='w-[85%] mx-auto lg:w-full bg-gray-50 grid place-items-center'>
             <div className='w-full lg:w-[77%] flex flex-wrap lg:flex-nowrap py-14 flex-1 items-center justify-between'>
                 <p className='text-gray-500 font-semibold text-left leading-6 text-md'>&copy; 2023 ClearLink. All rights reserved.</p>
                 <div className='flex items-center gap-6 text-[#98A2B3] '>

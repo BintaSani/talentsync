@@ -11,7 +11,7 @@ function Advantage (){
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}} className='grid place-items-center py-14'>
-            <div className='w-[85%] lg:w-[77%]'>
+            <div className='w-[90%] 3xl:w-[77%]'>
                 <div className='lg:w-[70%]'>
                     <p className='text-blue-700 mb-3 text-lg font-semibold text-left leading-7 tracking-normal'>The ClearLink Advantage</p>
                     <h3 className='text-gray-800 mb-3 text-4xl font-semibold leading-15 tracking-tighter text-left'>Why choose ClearLink?</h3>

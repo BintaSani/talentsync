@@ -11,7 +11,7 @@ function Ready(){
         {({ inView, ref }) => (
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : {}} className='pt-20 flex items-center lg:pl-44'>
+        animate={inView ? { opacity: 1 } : {}} className='pt-20 flex items-center lg:pl-36 3xl:pl-44'>
             <div className='w-[85%] mx-auto lg:w-[99%] flex flex-wrap lg:flex-nowrap justify-between'>
                 <motion.div ref={ref}
             initial={{ opacity: 0, y: 50 }}

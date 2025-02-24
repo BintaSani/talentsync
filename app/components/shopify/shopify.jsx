@@ -11,7 +11,7 @@ function Shopify(){
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}} className='py-16 bg-gray-50 flex items-center justify-center'>
-            <div className='w-[85%] lg:w-[77%] flex flex-wrap lg:flex-nowrap items-center justify-between'>
+            <div className='w-[90%] 3xl:w-[77%] flex flex-wrap lg:flex-nowrap items-center justify-between'>
                 <motion.div ref={ref}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}} 
@@ -103,7 +103,7 @@ function Shopify(){
                     </svg>
 
                     <p className='text-gray-900 text-5xl font-medium leading-15 tracking-tighter text-left'>ClearLink has upgraded our remote meetings. High-quality video, screen sharing, and top-notch security make it essential for our team.</p>
-                    <div className='flex items-center justify-between mt-8'>
+                    <div className='flex flex-wrap lg:flex-nowrap items-center justify-between mt-8'>
                         <div className='flex gap-4'>
                             <Image src='/assets/Avatar5.png' width={56} height={56} alt='avatar' className='rounded-full'/>
                             <div className=''>
@@ -111,7 +111,7 @@ function Shopify(){
                                 <p className='text gray-600 text-lg font-normal leading-7 tracking-normal text-left'>Project Manager, Shopify</p>
                             </div>
                         </div>
-                        <div className='flex gap-8'>
+                        <div className='flex mt-5 lg:mt-0 gap-8'>
                             <div className='rounded-full w-11 h-11 bg-white border border-[#D1E9FF] hover:bg-gray-300 shadow-sm flex justify-center items-center'>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#175CD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -129,7 +129,7 @@ function Shopify(){
                 </motion.div>
                 <motion.div initial={{ opacity: 0, x: -50 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}} 
-                transition={{ duration: 0.5, delay: inView ? 0.5 : 0  }}  className='grid place-items-center w-[85%] mt-10 lg:mt-0 lg:w-[40%]'>
+                transition={{ duration: 0.5, delay: inView ? 0.5 : 0  }}  className='grid place-items-center w-full mt-10 lg:mt-0 lg:w-[40%]'>
                     <div className='flex justify-center items-end gap-4 mb-4' >
                         <div>
                             <Image src='/assets/Image.png' width={160} height={160} alt='avatar' className=''/>

@@ -31,7 +31,7 @@ function Faqs(){
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}  className='py-24 grid place-items-center'>
-            <div className='w-[85%] mx-auto lg:w-[77%] flex flex-wrap lg:flex-nowrap justify-between'>
+            <div className='w-[90%] mx-auto 3xl:w-[77%] flex flex-wrap lg:flex-nowrap justify-between'>
                 <motion.div ref={ref}
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}} className='w-full lg:w-[32%]'>

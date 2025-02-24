@@ -17,7 +17,7 @@ export default function Navbar() {
         setShow(!show);
     }
   return (
-    <nav className='w-[80%] mt-6 border border-gray-300 bg-gray-100 flex justify-between rounded-full items-center py-4 px-8 mx-auto'>
+    <nav className='w-[95%] 3xl:w-[80%] mt-6 border border-gray-300 bg-gray-100 flex justify-between rounded-full items-center py-4 px-8 mx-auto'>
         <div className=''>
             <Image src='/assets/logo.svg'
             width={153}

@@ -9,19 +9,19 @@ import {motion} from 'framer-motion';
 
 function LandingPage() {
   return (
-    <section className='bg-background h-[100vh] bg-center bg-no-repeat bg-[length:100%_100vh] '>
+    <section className='bg-background min-h-screen bg-center bg-no-repeat bg-[length:100%_100vh] '>
         
-      <div className='w-full'>
+      <div className=''>
         <Navbar/>
-        <div className='w-[85%] lg:w-[75%] max-w-[1500px] mx-auto mt-20 lg:mt-32 grid lg:flex flex-wrap justify-between items-center'>
+        <div className='w-[90%] 3xl:w-[75%] mx-auto mt-24 lg:mt-32 flex flex-wrap lg:flex-nowrap justify-between items-center'>
             <motion.div initial={{ opacity: 0, x: -50 }} 
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }} className='w-full lg:w-[60%]'>
-                <h1 className='mb-4 text-4xl leading-[50px] lg:text-6xl font-semibold lg:leading-[72px] tracking-tighter text-left'>Uniting the world,<br/>one video call at a time</h1>
-                <p className='w-full lg:w-[67%] mb-8 text-gray-500 text-xs lg:text-base font-normal leading-8 tracking-normal text-left'>Experience the future of communication with ClearLink - where crystal-clear video conferencing meets unparalleled simplicity.</p>
-                <div className='flex mb-8 gap-2 items-center'>
-                    <motion.button whileTap={{ scale: 0.8 }} type="button" className='px-5 hover:bg-blue-800 py-2 border  flex items-center justify-center border-blue-700 rounded-full bg-blue-700 border-t-2 text-white text-sm leading-5 lg:text-lg font-semibold lg:leading-7 tracking-normal '>Sign up for free trial</motion.button>
-                    <motion.button whileTap={{ scale: 0.8 }} type="button" className='px-5 py-2 hover:bg-gray-300 gap-4 flex items-center justify-center rounded-full bg-white text-blue-700 text-sm leading-5 lg:text-lg font-semibold lg:leading-7 tracking-normal '>
+                <h1 className='mb-4 text-4xl leading-[52px] lg:text-6xl font-semibold lg:leading-[72px] tracking-tighter text-left'>Uniting the world,<br/>one video call at a time</h1>
+                <p className='w-[67%] mb-8 text-gray-500 text-xs lg:text-base font-normal leading-8 tracking-normal text-left'>Experience the future of communication with ClearLink - where crystal-clear video conferencing meets unparalleled simplicity.</p>
+                <div className='flex flex-wrap md:flex-nowrap mb-8 gap-2 items-center'>
+                    <motion.button whileTap={{ scale: 0.8 }} type="button" className='lg:px-5 px-4 hover:bg-blue-800 py-1.5 lg:py-2 border  flex items-center justify-center border-blue-700 rounded-full bg-blue-700 border-t-2 text-white text-sm lg:text-lg font-semibold leading-7 tracking-normal '>Sign up for free trial</motion.button>
+                    <motion.button whileTap={{ scale: 0.8 }} type="button" className='lg:px-5 px-4 py-1.5 lg:py-2 hover:bg-gray-300 gap-4 flex items-center justify-center rounded-full bg-white text-blue-700 text-sm lg:text-lg font-semibold leading-7 tracking-normal '>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.1055 17.6576C8.76001 17.6577 7.43546 17.6614 6.11094 17.6564C5.47164 17.654 4.86811 17.5139 4.3315 17.1442C3.56327 16.6149 3.12949 15.8887 3.01861 14.9621C2.98113 14.6488 2.98556 14.3362 2.98539 14.0229C2.98425 11.9455 2.98131 9.86806 2.98695 7.79064C2.9886 7.18281 3.10841 6.59641 3.44285 6.07727C4.00967 5.19738 4.81401 4.70243 5.86856 4.66999C6.59987 4.64749 7.33238 4.66512 8.06434 4.66161C8.37756 4.6601 8.69078 4.64441 9.0039 4.6469C9.16936 4.64822 9.21906 4.58032 9.21747 4.42089C9.21122 3.79354 9.21224 3.16607 9.21681 2.53869C9.22015 2.08077 9.41712 1.79829 9.79064 1.69542C10.222 1.57662 10.6529 1.83667 10.7401 2.27491C10.7644 2.39695 10.7766 2.52328 10.7775 2.64776C10.7815 3.21937 10.7867 3.79116 10.7759 4.3626C10.7721 4.56333 10.8208 4.64295 11.0403 4.64938C12.0371 4.67858 13.0339 4.64762 14.0305 4.66484C15.3009 4.6868 16.3239 5.39259 16.7939 6.57421C16.9078 6.86043 16.9722 7.16212 16.98 7.47028C17.0425 9.92365 16.991 12.3772 16.9749 14.8305C16.9655 16.2594 15.7609 17.4917 14.3282 17.6275C14.0915 17.6499 13.8558 17.6583 13.6189 17.6582C12.4547 17.6579 11.2906 17.6578 10.1055 17.6576ZM5.95679 6.19887C5.14194 6.25783 4.57093 6.84107 4.55078 7.65545C4.53751 8.19192 4.54734 8.72896 4.54713 9.26574C4.54644 11.0225 4.54337 12.7793 4.54632 14.5361C4.54786 15.4586 5.12844 16.0894 6.01631 16.0928C8.66539 16.1031 11.3146 16.1029 13.9636 16.0923C14.8449 16.0887 15.4486 15.4534 15.4496 14.5693C15.4523 12.2967 15.4527 10.024 15.4494 7.75133C15.4481 6.8244 14.8263 6.1986 13.9013 6.19743C11.2661 6.19409 8.63095 6.19711 5.95679 6.19887Z" fill="#175CD3"/>
                         <path d="M2.04289 9.95246C2.04291 11.4377 2.04309 12.9021 2.04278 14.3665C2.04272 14.6527 2.04173 14.6475 1.75323 14.6545C1.45013 14.6619 1.15185 14.6395 0.875652 14.5071C0.309544 14.2358 0.0295195 13.7576 0.0148384 13.1526C-0.00951087 12.149 0.00137854 11.1444 0.0104841 10.1404C0.0179942 9.31219 0.675786 8.66167 1.50414 8.64184C2.04325 8.62892 2.04324 8.62892 2.04305 9.15752C2.04296 9.41553 2.04294 9.67354 2.04289 9.95246Z" fill="#175CD3"/>
@@ -144,14 +144,14 @@ function LandingPage() {
                     </div>
                 </div>
             </motion.div>
-            <div className='w-full mt-5 lg:mt-0 lg:w-[40%] p-8 grid place-items-center rounded-[16px] shadow-2xl  bg-gradient-to-b from-[#EFF8FF] to-[#EFF8FF] border border[#B2DDFF]'>
+            <div className='w-full md:w-fit mt-10 lg:mt-0 lg:w-[40%] p-4 md:p-8 grid place-items-center rounded-[16px] shadow-2xl bg-gradient-to-b from-[#EFF8FF] to-[#EFF8FF] border border[#B2DDFF]]'>
                 <div className='grid grid-cols-3 grid-rows-2 gap-4'>
-                    <Image src='/assets/pic.svg' width={160} height={160} className='rounded-[12px] w-[100px] h-[100px] lg:w-[160px] lg:h-[160px]' alt='' />
-                    <Image src='/assets/pic1.svg' width={160} height={160} className='rounded-[12px] w-[100px] h-[100px] lg:w-[160px] lg:h-[160px]' alt='' />
-                    <Image src='/assets/pic2.svg' width={160} height={160} className='rounded-[12px] w-[100px] h-[100px] lg:w-[160px] lg:h-[160px]' alt='' />
-                    <Image src='/assets/pic3.svg' width={160} height={160} className='rounded-[12px] w-[100px] h-[100px] lg:w-[160px] lg:h-[160px]' alt='' />
-                    <Image src='/assets/pic4.svg' width={160} height={160} className='rounded-[12px] w-[100px] h-[100px] lg:w-[160px] lg:h-[160px]' alt='' />
-                    <Image src='/assets/pic5.svg' width={160} height={160} className='rounded-[12px] w-[100px] h-[100px] lg:w-[160px] lg:h-[160px]' alt='' />
+                    <Image src='/assets/pic.svg' width={160} height={160} className='rounded-[12px]' alt='' />
+                    <Image src='/assets/pic1.svg' width={160} height={160} className='rounded-[12px]' alt='' />
+                    <Image src='/assets/pic2.svg' width={160} height={160} className='rounded-[12px]' alt='' />
+                    <Image src='/assets/pic3.svg' width={160} height={160} className='rounded-[12px]' alt='' />
+                    <Image src='/assets/pic4.svg' width={160} height={160} className='rounded-[12px]' alt='' />
+                    <Image src='/assets/pic5.svg' width={160} height={160} className='rounded-[12px]' alt='' />
                 </div>
                 <div className='mt-8 flex items-center gap-4 '>
                     <div className='rounded-full w-11 h-11 bg-white border border-[#D1E9FF] shadow-sm flex justify-center items-center'>
