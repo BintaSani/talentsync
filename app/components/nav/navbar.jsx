@@ -22,9 +22,9 @@ export default function Navbar() {
             <Image src='/assets/logo.svg'
             width={153}
             height={30}
-            alt='logo'/>
+            alt='logo' className='cursor-pointer w-24 h-6 '/>
         </div>
-        <div className='flex gap-10 text-gray-500 font-semibold text-lg leading-loose '>
+        <div className='lg:flex gap-10 hidden text-gray-500 font-semibold text-sm 3xl:text-lg leading-loose '>
 
             <a onClick={open} className='gap-1.5 flex relative items-center hover:text-gray-800' href='#'>
                 Products
@@ -33,9 +33,9 @@ export default function Navbar() {
                 </svg>
                 {isOpen && <div className='absolute w-[120%] top-[173%] bg-gray-100 border py-3 shadow-md rounded'>
                     <ul className=''>
-                        <li className='text-gray-500 text-center font-semibold text-md leading-6 hover:bg-gray-300 py-2 px-3'>product 1</li>
-                        <li className='text-gray-500 text-center font-semibold text-md leading-6 hover:bg-gray-300 py-2 px-3'>product 2</li>
-                        <li className='text-gray-500 text-center font-semibold text-md leading-6 hover:bg-gray-300 py-2 px-3'>product 3</li>
+                        <li className='text-gray-500 text-center font-semibold text-sm leading-6 hover:bg-gray-300 py-2 px-3'>product 1</li>
+                        <li className='text-gray-500 text-center font-semibold text-sm leading-6 hover:bg-gray-300 py-2 px-3'>product 2</li>
+                        <li className='text-gray-500 text-center font-semibold text-sm leading-6 hover:bg-gray-300 py-2 px-3'>product 3</li>
                     </ul>
                 </div>}
             </a>
@@ -70,9 +70,9 @@ export default function Navbar() {
             <a className='gap-1.5 flex items-center hover:text-gray-800' href='#'>Pricing</a>
 
         </div>
-        <div className='gap-2 flex items-center'>
-            <motion.button whileTap={{ scale: 0.8 }} type="button" className='px-6 py-2 hover:bg-gray-300 border border-gray-400 rounded-full bg-white text-gray-900 shadow-md font-semibold text-xl leading-loose'>Talk to sales</motion.button>
-            <motion.button whileTap={{ scale: 0.8 }} type="button" className='px-6 hover:bg-blue-800 py-2 border border-blue-700 rounded-full bg-blue-700 border-t-2 text-white shadow-md font-semibold text-xl leading-loose '>Sign up for free</motion.button>
+        <div className='gap-2 lg:flex items-center hidden '>
+            <motion.button whileTap={{ scale: 0.8 }} type="button" className='3xl:px-6 px-4 py-1.5 3xl:py-2 hover:bg-gray-300 border border-gray-400 rounded-full bg-white text-gray-900 shadow-md font-semibold text-base 3xl:text-xl leading-loose'>Talk to sales</motion.button>
+            <motion.button whileTap={{ scale: 0.8 }} type="button" className='3xl:px-6 px-4 hover:bg-blue-800 py-1.5 3xl:py-2 border border-blue-700 rounded-full bg-blue-700 border-t-2 text-white shadow-md font-semibold text-base 3xl:text-xl leading-loose '>Sign up for free</motion.button>
         </div>
       
     </nav>

@@ -31,17 +31,17 @@ function Faqs(){
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}  className='py-24 grid place-items-center'>
-            <div className='w-[77%] flex justify-between'>
+            <div className='w-[85%] mx-auto lg:w-[77%] flex flex-wrap lg:flex-nowrap justify-between'>
                 <motion.div ref={ref}
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}} className='w-[32%]'>
+            animate={inView ? { opacity: 1, y: 0 } : {}} className='w-full lg:w-[32%]'>
                     <p className='text-blue-700 mb-5 text-lg font-semibold leading-7 tracking-normal text-left'>Support</p>
                     <h3 className='text-gray-800 mb-5 text-4xl font-semibold leading-15 tracking-tighter text-left'>FAQs</h3>
                     <p className='text-gray-500 text-base font-normal leading-6 tracking-normal text-left'>Everything you need to know about the product and billing. Can&apos;t find the answer you&apos;re looking for? Please <span className='underline'>chat to our friendly team.</span></p>
                 </motion.div>
                 <motion.div initial={{ opacity: 0, x: -50 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}} 
-                transition={{ duration: 0.5, delay: inView ? 0.5 : 0  }}  className='w-[60%] '>
+                transition={{ duration: 0.5, delay: inView ? 0.5 : 0  }}  className='w-full mt-10 lg:mt-0 lg:w-[60%] '>
                     {accordionItems.map((item, index) => (
                         <div key={index} className={`${
                             activeIndex === index ? 'bg-gray-50 border border-gray-200 rounded-2xl' : ''

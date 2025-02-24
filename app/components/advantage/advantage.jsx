@@ -11,18 +11,18 @@ function Advantage (){
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}} className='grid place-items-center py-14'>
-            <div className='w-[77%]'>
-                <div className='w-[70%]'>
+            <div className='w-[85%] lg:w-[77%]'>
+                <div className='lg:w-[70%]'>
                     <p className='text-blue-700 mb-3 text-lg font-semibold text-left leading-7 tracking-normal'>The ClearLink Advantage</p>
                     <h3 className='text-gray-800 mb-3 text-4xl font-semibold leading-15 tracking-tighter text-left'>Why choose ClearLink?</h3>
                     <p className='w-[51%] text-gray-500 text-xs font-normal leading-6 tracking-normal text-left'>In a world where connection is everything, ClearLink takes the lead. Our cutting-edge video conferencing app offers:</p>
                 </div>
                 
-                <div className='mt-16  flex items-center justify-between'>
+                <div className='mt-16  flex flex-wrap lg:flex-nowrap items-center justify-between'>
                     <motion.div ref={ref}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}} 
-                    transition={{ type: 'spring', stiffness: 200, damping: 20, delay: inView ? 0.5 : 0  }} className='grid grid-cols-2 grid-rows-2 gap-5 w-[59%] '>
+                    transition={{ type: 'spring', stiffness: 200, damping: 20, delay: inView ? 0.5 : 0  }} className='grid grid-cols-2 grid-rows-2 gap-5 w-full lg:w-[59%] '>
                         <div className=''>
                             <div className='w-14 mb-4 h-14 rounded-full bg-gray-50 grid place-items-center border border-gray-200'>
                                 <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@ function Advantage (){
                     </motion.div>
                     <motion.div initial={{ opacity: 0, x: -50 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}} 
-                    transition={{ duration: 0.5, delay: inView ? 0.5 : 0  }} className=' w-[40%] h-full relative'>
+                    transition={{ duration: 0.5, delay: inView ? 0.5 : 0  }} className='w-full mt-48 lg:mt-0 lg:w-[40%] h-full relative'>
                         <Image src='/assets/Rectangle.png' width={544} height={527} alt='collage'/>
                         <div className='absolute -top-56 right-40 animate-pulse'>
                             <svg width="283" height="244" viewBox="0 0 283 244" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -9,7 +9,7 @@ function Carousel(){
         {({ inView, ref }) => (
         <motion.section ref={ref}
         initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : {}} className='grid place-items-center overflow-x-hidden  py-20'>
+        animate={inView ? { opacity: 1 } : {}} className='grid place-items-center overflow-x-hidden py-10 lg:py-20'>
             <p className='text-gray-600 text-xl font-medium mb-11 leading-10 tracking-normal text-center'>Join 1,500+ companies already video conferencing the ClearLink way</p>
             <div className='w-[73%] justify-between flex items-center'>
                 

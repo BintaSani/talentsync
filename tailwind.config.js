@@ -16,6 +16,15 @@ module.exports = {
       },
     },
     screens: {
+  		xs: '390px',
+  		sm: '640px',
+  		md: '768px',
+  		mdSm: '800px',
+  		mdLg: '900px',
+  		lg: '1024px',
+  		xl: '1280px',
+  		'2xl': '1500px',
+  		'3xl': '1700px',
       '3xl' : '1700px',
     }
   },
